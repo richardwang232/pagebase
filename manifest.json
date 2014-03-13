@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "PageBase",
+  "description": "This extension just rocks.",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "pagebase.html"
+  },
+  "permissions": [
+  	"tabs",
+  	"http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"
+  ]
+}
