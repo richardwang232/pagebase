@@ -4,7 +4,7 @@ $(document).ready(function() {
 		if (!localStorage.pageBase) localStorage.pageBase = JSON.stringify([]);
 		var cloned = $.parseJSON(localStorage.pageBase);
 		$.each(cloned, function(i, page) {
-			$('#urls').append('<a href="' + page.url + '">' + page.title + '</a> <a href="#" class="delete-page" data-id="'+ i + '">x</a><br/>');
+			$('#urls').append('<a href="' + page.url + '" target="_blank">' + page.title + '</a> <a href="#" class="delete-page" data-id="'+ i + '">x</a><br/>');
 		});
 
 	$('#foo').click(function() {
